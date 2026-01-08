@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cài Đặt - Lớp 9/3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <h1 class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit"
+              >Lớp 9/3</a
+            >
+          </h1>
+          <ul class="nav-menu">
+            <li><a href="index.html#home">Trang Chủ</a></li>
+            <li><a href="about.html">Giới Thiệu</a></li>
+            <li><a href="students.html">Học Sinh</a></li>
+            <li><a href="activities.html">Hoạt Động</a></li>
+            <li><a href="achievements.html">Thành Tích</a></li>
+            <li><a href="settings.html">Cài Đặt</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-title">Cài Đặt</h1>
+          <p class="page-subtitle">Tùy chỉnh và quản lý trang web</p>
+        </div>
+      </section>
+
+      <section class="settings-section">
+        <div class="container">
+          <div class="settings-content">
+            <!-- Cài đặt hiển thị -->
+            <div class="settings-card">
+              <h2 class="settings-card-title">⚙️ Cài Đặt Hiển Thị</h2>
+              <div class="settings-item">
+                <label>
+                  <input type="checkbox" id="darkMode" />
+                  <span>Chế độ tối</span>
+                </label>
+                <p class="settings-description">
+                  Chuyển đổi giao diện sang chế độ tối để bảo vệ mắt
+                </p>
+              </div>
+              <div class="settings-item">
+                <label>
+                  <input type="checkbox" id="animations" checked />
+                  <span>Hiệu ứng động</span>
+                </label>
+                <p class="settings-description">
+                  Bật/tắt các hiệu ứng chuyển động trên trang web
+                </p>
+              </div>
+              <div class="settings-item">
+                <label>
+                  Kích thước chữ:
+                  <select id="fontSize">
+                    <option value="small">Nhỏ</option>
+                    <option value="medium" selected>Vừa</option>
+                    <option value="large">Lớn</option>
+                  </select>
+                </label>
+                <p class="settings-description">
+                  Điều chỉnh kích thước chữ để dễ đọc hơn
+                </p>
+              </div>
+            </div>
+
+            <!-- Cài đặt thông báo -->
+            <div class="settings-card">
+              <h2 class="settings-card-title">🔔 Thông Báo</h2>
+              <div class="settings-item">
+                <label>
+                  <input type="checkbox" id="notifications" checked />
+                  <span>Bật thông báo</span>
+                </label>
+                <p class="settings-description">
+                  Nhận thông báo về các hoạt động và sự kiện mới của lớp
+                </p>
+              </div>
+              <div class="settings-item">
+                <label>
+                  <input type="checkbox" id="emailNotifications" />
+                  <span>Thông báo qua email</span>
+                </label>
+                <p class="settings-description">
+                  Gửi thông báo đến địa chỉ email của bạn
+                </p>
+              </div>
+            </div>
+
+            <!-- Cài đặt ngôn ngữ -->
+            <div class="settings-card">
+              <h2 class="settings-card-title">🌐 Ngôn Ngữ</h2>
+              <div class="settings-item">
+                <label>
+                  Ngôn ngữ hiển thị:
+                  <select id="language">
+                    <option value="vi" selected>Tiếng Việt</option>
+                    <option value="en">English</option>
+                  </select>
+                </label>
+                <p class="settings-description">
+                  Chọn ngôn ngữ hiển thị cho trang web
+                </p>
+              </div>
+            </div>
+
+            <!-- Cài đặt dữ liệu -->
+            <div class="settings-card">
+              <h2 class="settings-card-title">💾 Dữ Liệu</h2>
+              <div class="settings-item">
+                <button class="settings-button" id="clearCache">
+                  Xóa bộ nhớ đệm
+                </button>
+                <p class="settings-description">
+                  Xóa dữ liệu đã lưu trong trình duyệt để làm mới trang web
+                </p>
+              </div>
+              <div class="settings-item">
+                <button class="settings-button" id="exportData">
+                  Xuất dữ liệu
+                </button>
+                <p class="settings-description">
+                  Tải xuống dữ liệu của trang web
+                </p>
+              </div>
+            </div>
+
+            <!-- Thông tin -->
+            <div class="settings-card">
+              <h2 class="settings-card-title">ℹ️ Thông Tin</h2>
+              <div class="settings-item">
+                <p><strong>Phiên bản:</strong> 1.0.0</p>
+                <p><strong>Ngày cập nhật:</strong> 2024</p>
+                <p><strong>Lớp:</strong> 9/3</p>
+              </div>
+            </div>
+
+            <!-- Nút lưu -->
+            <div class="settings-actions">
+              <button class="settings-save-btn" id="saveSettings">
+                Lưu Cài Đặt
+              </button>
+              <button class="settings-reset-btn" id="resetSettings">
+                Đặt Lại Mặc Định
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Lớp 9/3. Tất cả quyền được bảo lưu.</p>
+        <p>Made with ❤️ by Lớp 9/3</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="settings.js"></script>
+    <script>
+      // Apply settings immediately when changed
+      document
+        .getElementById("darkMode")
+        .addEventListener("change", function () {
+          updateSettingsFromForm();
+        });
+
+      document
+        .getElementById("animations")
+        .addEventListener("change", function () {
+          updateSettingsFromForm();
+        });
+
+      document
+        .getElementById("fontSize")
+        .addEventListener("change", function () {
+          updateSettingsFromForm();
+        });
+
+      document
+        .getElementById("notifications")
+        .addEventListener("change", function () {
+          updateSettingsFromForm();
+        });
+
+      document
+        .getElementById("emailNotifications")
+        .addEventListener("change", function () {
+          updateSettingsFromForm();
+        });
+
+      document
+        .getElementById("language")
+        .addEventListener("change", function () {
+          updateSettingsFromForm();
+        });
+
+      document
+        .getElementById("saveSettings")
+        .addEventListener("click", function () {
+          updateSettingsFromForm();
+          alert("Đã lưu cài đặt thành công!");
+        });
+
+      document
+        .getElementById("resetSettings")
+        .addEventListener("click", function () {
+          if (
+            confirm("Bạn có chắc chắn muốn đặt lại tất cả cài đặt về mặc định?")
+          ) {
+            localStorage.removeItem("classSettings");
+            location.reload();
+          }
+        });
+
+      document
+        .getElementById("clearCache")
+        .addEventListener("click", function () {
+          if (confirm("Bạn có chắc chắn muốn xóa bộ nhớ đệm?")) {
+            localStorage.clear();
+            alert("Đã xóa bộ nhớ đệm thành công!");
+            location.reload();
+          }
+        });
+
+      document
+        .getElementById("exportData")
+        .addEventListener("click", function () {
+          const settings = localStorage.getItem("classSettings");
+          if (settings) {
+            const blob = new Blob([settings], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "lop93-settings.json";
+            a.click();
+            URL.revokeObjectURL(url);
+            alert("Đã xuất dữ liệu thành công!");
+          } else {
+            alert("Không có dữ liệu để xuất!");
+          }
+        });
+
+      // Load and apply saved settings on page load
+      loadSettings();
+      applySettings();
+    </script>
+  </body>
+</html>

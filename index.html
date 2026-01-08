@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lớp 9/3 - Trang Giới Thiệu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="firebaseConfig.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <h1 class="logo">Lớp 9/3</h1>
+          <ul class="nav-menu">
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="about.html">Giới Thiệu</a></li>
+            <li><a href="students.html">Học Sinh</a></li>
+            <li><a href="activities.html">Hoạt Động</a></li>
+            <li><a href="achievements.html">Thành Tích</a></li>
+            <li><a href="settings.html">Cài Đặt</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h2 class="hero-title">Chào Mừng Đến Với Lớp 9/3</h2>
+          <p class="hero-subtitle">
+            Một tập thể đoàn kết, năng động và đầy nhiệt huyết
+          </p>
+          <button class="cta-button" onclick="scrollToSection('about')">
+            Tìm Hiểu Thêm
+          </button>
+        </div>
+        <div class="hero-decoration">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">Về Lớp Chúng Tôi</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Lớp 9/3 là một tập thể học sinh đầy năng động và sáng tạo. Chúng
+                tôi không chỉ học tập chăm chỉ mà còn tích cực tham gia các hoạt
+                động ngoại khóa, thể thao và các sự kiện của trường.
+              </p>
+              <p>
+                Với tinh thần đoàn kết, lớp 9/3 luôn cố gắng phấn đấu để đạt
+                được những thành tích cao trong học tập và các hoạt động tập
+                thể.
+              </p>
+              <div class="stats">
+                <div class="stat-item">
+                  <h3>39</h3>
+                  <p>Học Sinh</p>
+                </div>
+                <div class="stat-item">
+                  <h3>100%</h3>
+                  <p>Đoàn Kết</p>
+                </div>
+                <div class="stat-item">
+                  <h3>Nhiều</h3>
+                  <p>Thành Tích</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-image">
+              <div class="image-placeholder">
+                <span>📚</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="students" class="students">
+        <div class="container">
+          <h2 class="section-title">Ban Cán Sự Lớp</h2>
+          <div class="students-grid">
+            <div class="student-card">
+              <div class="student-avatar">👨‍🎓</div>
+              <h3>Lớp Trưởng</h3>
+              <p>Điều hành và quản lý các hoạt động của lớp</p>
+              <a href="students.html" class="card-link">Xem Chi Tiết →</a>
+            </div>
+            <div class="student-card">
+              <div class="student-avatar">👩‍🎓</div>
+              <h3>Lớp Phó</h3>
+              <p>Hỗ trợ lớp trưởng và quản lý học tập</p>
+              <a href="students.html" class="card-link">Xem Chi Tiết →</a>
+            </div>
+            <div class="student-card">
+              <div class="student-avatar">👨‍🎓</div>
+              <h3>Tổ Trưởng Tổ 1</h3>
+              <p>Quản lý và điều hành các hoạt động của tổ 1</p>
+              <a href="students.html" class="card-link">Xem Chi Tiết →</a>
+            </div>
+            <div class="student-card">
+              <div class="student-avatar">👩‍🎓</div>
+              <h3>Tổ Phó Tổ 1</h3>
+              <p>Hỗ trợ tổ trưởng tổ 1 trong việc quản lý tổ</p>
+              <a href="students.html" class="card-link">Xem Chi Tiết →</a>
+            </div>
+            <div class="student-card">
+              <div class="student-avatar">👨‍🎓</div>
+              <h3>Tổ Trưởng Tổ 2</h3>
+              <p>Quản lý và điều hành các hoạt động của tổ 2</p>
+              <a href="students.html" class="card-link">Xem Chi Tiết →</a>
+            </div>
+            <div class="student-card">
+              <div class="student-avatar">👩‍🎓</div>
+              <h3>Tổ Phó Tổ 2</h3>
+              <p>Hỗ trợ tổ trưởng tổ 2 trong việc quản lý tổ</p>
+              <a href="students.html" class="card-link">Xem Chi Tiết →</a>
+            </div>
+            <div class="student-card">
+              <div class="student-avatar">👨‍🎓</div>
+              <h3>Tổ Trưởng Tổ 3</h3>
+              <p>Quản lý và điều hành các hoạt động của tổ 3</p>
+              <a href="students.html" class="card-link">Xem Chi Tiết →</a>
+            </div>
+            <div class="student-card">
+              <div class="student-avatar">👩‍🎓</div>
+              <h3>Tổ Phó Tổ 3</h3>
+              <p>Hỗ trợ tổ trưởng tổ 3 trong việc quản lý tổ</p>
+              <a href="students.html" class="card-link">Xem Chi Tiết →</a>
+            </div>
+            <div class="student-card">
+              <div class="student-avatar">👨‍🎓</div>
+              <h3>Tổ Trưởng Tổ 4</h3>
+              <p>Quản lý và điều hành các hoạt động của tổ 4</p>
+              <a href="students.html" class="card-link">Xem Chi Tiết →</a>
+            </div>
+            <div class="student-card">
+              <div class="student-avatar">👩‍🎓</div>
+              <h3>Tổ Phó Tổ 4</h3>
+              <p>Hỗ trợ tổ trưởng tổ 4 trong việc quản lý tổ</p>
+              <a href="students.html" class="card-link">Xem Chi Tiết →</a>
+            </div>
+            <div class="student-card">
+              <div class="student-avatar">🎨</div>
+              <h3>Ban Văn Thể Mỹ</h3>
+              <p>Tổ chức các hoạt động văn nghệ, thể thao</p>
+              <a href="students.html" class="card-link">Xem Chi Tiết →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="activities" class="activities">
+        <div class="container">
+          <h2 class="section-title">Hoạt Động Nổi Bật</h2>
+          <div class="activities-timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+                <h3>Tham Gia Hội Thi Học Sinh Giỏi</h3>
+                <p>
+                  Nhiều học sinh lớp 9/3 đã đạt giải cao trong các kỳ thi học
+                  sinh giỏi cấp trường và cấp thành phố.
+                </p>
+                <a href="activities.html" class="timeline-link">Đọc Thêm →</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+                <h3>Hoạt Động Từ Thiện</h3>
+                <p>
+                  Lớp đã tổ chức nhiều hoạt động từ thiện, quyên góp cho các bạn
+                  học sinh có hoàn cảnh khó khăn.
+                </p>
+                <a href="activities.html" class="timeline-link">Đọc Thêm →</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+                <h3>Tham Gia Hội Thao</h3>
+                <p>
+                  Đạt nhiều giải thưởng trong các môn thể thao như bóng đá, bóng
+                  chuyền, cầu lông.
+                </p>
+                <a href="activities.html" class="timeline-link">Đọc Thêm →</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+                <h3>Văn Nghệ Chào Mừng</h3>
+                <p>
+                  Biểu diễn các tiết mục văn nghệ đặc sắc trong các sự kiện của
+                  trường.
+                </p>
+                <a href="activities.html" class="timeline-link">Đọc Thêm →</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+                <h3>Xem Tất Cả Thành Tích</h3>
+                <p>
+                  Khám phá tất cả các thành tích và giải thưởng mà lớp 9/3 đã
+                  đạt được.
+                </p>
+                <a href="achievements.html" class="timeline-link"
+                  >Xem Thành Tích →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Lớp 9/3. Tất cả quyền được bảo lưu.</p>
+        <p>Made with ❤️ by Lớp 9/3</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="settings.js"></script>
+  </body>
+</html>
